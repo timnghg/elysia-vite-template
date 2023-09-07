@@ -1,0 +1,26 @@
+{
+    "name": "elysia-vite",
+    "version": "0.0.1",
+    "scripts": {
+        "test": "bun test",
+        "dev": "bun run dev:hot",
+        "dev:watch": "bun run --watch src/index.ts",
+        "dev:hot": "bun run --hot src/index.ts",
+        "start": "NODE_ENV=production bun run src/index.ts",
+        "build": "NODE_ENV=production bun vite src/index.ts"
+    },
+    "dependencies": {
+        "elysia": "latest",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "vite-tsconfig-paths": "^4.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.21",
+        "@types/react-dom": "^18.2.7",
+        "@vitejs/plugin-react-swc": "^3.3.2",
+        "bun-types": "latest",
+        "vite": "^4.4.9"
+    },
+    "module": "src/index.js"
+}
